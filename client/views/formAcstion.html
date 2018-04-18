@@ -1,0 +1,51 @@
+<form >
+        <div class="panel panel-flat">
+          
+          <div class="panel-body">
+            <div class="row">
+            
+              <button type="button" class="btn btn-success addRule"><i class="icon-add position-left"></i> Reset</button>
+              <button ng-click="addContents()" type="submit" class="btn btn-primary pull-right saveRule" ><i class="icon-floppy-disk position-left"></i>Save</button>
+            
+            </div>
+          </div>
+        </div>
+
+    <div class="panel panel-flat" indexpanel="3">
+              <div class="panel-body">
+                <i class="icon-bin rmCt" style="display: inline;"></i>
+                <div class="wrMove">
+                  <i class="icon-arrow-up13 moveTop" style="display: inline;"></i>
+                  <i class="icon-arrow-down132 moveBot" style="display: inline;"></i>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6">
+
+                    <label>User says similar to: </label>
+                    <div class="input-group">
+                      <input id="tags_1" type="text" class="tags" ng-model="content.user_say" />
+                    </div>
+
+
+                  </div>
+                  <div class="col-lg-6">
+                    <label>Bot replies with</label>
+                    <label>
+                        <input type="checkbox" class="js-switch" checked />
+                        Random
+                      </label>
+                   
+                    
+                      <div class="input-group">
+                        <span class="input-group-addon">
+                          <input id="is_active[]" name="is_active[]" type="checkbox" disabled="true">
+                        </span>
+                        <input id="is_answer[]" name="is_answer[]" type="text" class="form-control">
+                      </div>
+                    
+                    <button type="button" class="btn btn-success addAnswer" id="btn_answer_1"  onclick="addNewAnswerTextbox()"><i class="icon-plus22"></i> Add Answer</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+</form>

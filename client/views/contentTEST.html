@@ -1,0 +1,25 @@
+<div class="box-body table-responsive no-padding"> 
+    <table class="table table-hover">
+        <tr>
+          <th> </th>
+          <th>Topic</th>
+          <th>Reason</th>
+          <th> </th>
+          <th> </th>
+        </tr>
+      </table>
+        <div class="box-body table-responsive no-padding" ng-init="getContents()" ng-repeat="book in books">
+            <table class="table table-hover">
+                <td>1</td>
+                <td></td>
+                <td>{{book.}}</td>
+                <td>
+                  <a href="javascript:void(0)" onclick="editContent(1)"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit</a>
+                </td>
+                <td>
+                  <a href="javascript:void(0)" title="Nhấn vào đây để xóa" style="color: #dd4b39;" onclick="confirmDeleteContent(1)"><i class="fa fa-times-circle" aria-hidden="true"></i> Xóa</a>
+                </td>
+              </tr>
+              </table>     
+          </div>
+  </div>
